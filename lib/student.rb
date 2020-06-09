@@ -19,6 +19,16 @@ attr_reader :id
     grade TEXT)
     SQL
     DB[:conn].execute(sql)
-
+  end
+  
+  def self.drop_table
+    sql = <<-SQL
+    DROP TABLE IF EXISTS students
+    SQL
+    DB[:conn].execute(sql)
+  end
+  
+  def self.save
+    
 
 end
