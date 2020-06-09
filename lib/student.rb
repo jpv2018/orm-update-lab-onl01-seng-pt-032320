@@ -33,6 +33,7 @@ attr_reader :id
       self.update
     else
       sql <<-SQL
+      INSERT INTO students
       
 
 end
