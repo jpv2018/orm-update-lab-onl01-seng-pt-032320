@@ -65,6 +65,7 @@ attr_reader :id
   end
   
   def self.update
+    sql = <<-SQL
     
 
 end
