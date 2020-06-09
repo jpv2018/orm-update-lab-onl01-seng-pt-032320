@@ -51,7 +51,6 @@ attr_reader :id
   end
     
   def self.find_by_name(name)
-    binding.pry
     sql = <<-SQL
     SELECT * FROM students
     WHERE name = ?
