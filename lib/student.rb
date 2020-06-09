@@ -45,7 +45,8 @@ attr_reader :id
     self.new.save
   end
   
-  self.new_from_db
+  self.new_from_db(row)
+  
     
       
 
