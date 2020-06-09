@@ -58,7 +58,8 @@ attr_reader :id
     SELECT * FROM students
     WHERE name = ?
     SQL
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql).map do |row|
+      
       
 
 end
