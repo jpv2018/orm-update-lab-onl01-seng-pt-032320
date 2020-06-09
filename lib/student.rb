@@ -71,4 +71,5 @@ attr_reader :id
     WHERE id = ?
     SQL
     DB[:conn].execute(sql, self.name, self.grade, self.id)
+  end
 end
