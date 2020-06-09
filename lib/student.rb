@@ -42,7 +42,7 @@ attr_reader :id
   end
   
   def self.create(name, grade)
-    self.new.save
+    self.new(name, grade).save
   end
   
   def self.new_from_db(row)
