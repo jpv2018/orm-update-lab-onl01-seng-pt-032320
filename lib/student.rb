@@ -66,6 +66,6 @@ attr_reader :id
   
   def self.update
     sql = <<-SQL
-    UPDATE students SET name = ?
+    UPDATE students SET name = ?, grade = ?, WHERE id = ?
 
 end
