@@ -51,6 +51,7 @@ attr_reader :id
   end
     
   def self.find_by_name(name)
+    binding.pry
     sql = <<-SQL
     SELECT * FROM students
     WHERE name = ?
@@ -58,7 +59,6 @@ attr_reader :id
     SQL
     DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
-      binding.pry
     end
   end
   
