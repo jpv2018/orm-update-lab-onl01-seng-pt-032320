@@ -34,7 +34,8 @@ attr_reader :id
     else
       sql <<-SQL
       INSERT INTO students (name, grade)
-      (?, ?)
+      VALUES (?, ?)
+      
       
 
 end
