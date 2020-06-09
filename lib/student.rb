@@ -46,7 +46,10 @@ attr_reader :id
   end
   
   self.new_from_db(row)
-  
+  new_student = self.new
+  new_student.id = [0]
+  new_student.name = [1]
+  new_student.grade = [2]
     
       
 
